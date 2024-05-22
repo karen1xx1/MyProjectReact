@@ -1,0 +1,96 @@
+.page-for-log{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    padding: 50px;
+    gap: 30px;
+    align-items: center;
+    width: 100%;
+    .formik-image{
+        width: 90%;
+        margin-left: 30px;
+        img{
+            border-radius: 15px;
+            width: 100%;
+        }
+    }
+    section{
+        background-color: rgb(38, 44, 38);
+        color: white;
+        border-radius: 15px;
+        padding: 20px;
+        
+        h2{
+            font: italic bold 20px/2 cursive;
+            text-align: center;
+        }
+    }
+}
+
+.registr{
+    width: 100%;
+    padding: 40px;
+    margin: 0 auto;
+    form{
+        border-radius: 15px;
+        display: flex;
+        gap: 15px;
+        flex-direction: column;
+        box-shadow: 1px 1px 8px 5px white;
+        padding: 15px;
+        input{
+            padding: 8px;
+        }
+        a{
+            text-decoration: none;
+            margin: 0 auto;
+            width: 100%;
+        }
+        input[type="submit"]{
+            display: block;
+            margin: 20px auto;
+            width: 60%;
+            font-size: 20px;
+            cursor: pointer;
+        }
+        span{
+            color: rgb(182, 66, 66);
+        }
+    }
+}
+
+.radios{
+        label{
+            font-size: 20px;
+            margin: 20px;
+        }
+}
+
+.not-active{
+    pointer-events: none;
+    input{
+        background-color: rgb(167, 164, 164);
+        color: white;
+        border-style: none;
+    }
+}
+
+.active{
+    pointer-events: auto;
+    input{
+        background-color: green;
+    }
+}
+
+.welcome-text{
+    display: block;
+    padding: 20px;
+    text-align: center;
+    font-size: 25px;
+}
+
+.log-out{
+    cursor: pointer;
+    &:hover{
+        color: red;
+    }
+}

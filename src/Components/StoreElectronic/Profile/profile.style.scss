@@ -1,0 +1,53 @@
+.profil-avatar{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    left: 0%;
+    z-index: 1;
+    top: 15%;
+    cursor: pointer;
+    text-align: center;
+    background-color: green;
+    span{
+        color: white;
+        display: block;
+        margin-block: 18%;
+        font-size: 35px;
+
+    }
+}
+
+.profile-box-active{
+    position: relative;
+    background-color: grey;
+    width: clamp(100px, 30%, 300px);
+    position: absolute;
+    z-index: 2;
+    top: 10%;
+    transition: 200ms linear;
+    ul{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        font-size: 23px;
+        color: white;
+        height: 250px;
+        justify-content: space-around;
+        padding: 15px;
+        margin: 0 auto;
+
+      }
+}
+
+.close-user-info{
+  position: absolute;
+  right: 5px;
+  top: 3px;
+  font-size: 23px;
+  cursor: pointer;
+
+  &:hover{
+    color: red;
+  }
+}
