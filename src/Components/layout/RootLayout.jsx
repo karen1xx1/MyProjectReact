@@ -31,6 +31,17 @@ const RootLayout = ()  => {
         <Link to="/test" className={activeLink == "/test" ? 'active-page' : ""} id='test' onClick={()=> setActiveLink("test")}>JS Test</Link>
         <Link to="/reg" className={activeLink == "/reg" ? 'active-page' : ""} id='reg' onClick={()=> setActiveLink("reg")}>Registation</Link>
       </header>
+        <details className='small-menu'>
+          <summary>Menu</summary>
+          <ul>
+            <li><Link to="/store" className={activeLink == "/store" ? 'active-page' : ""} id='store' onClick={()=> setActiveLink("store")}>Electonic Store</Link></li>
+            <li><Link to="/cards" className={activeLink == "/cards" ? 'active-page' : ""} id='cards' onClick={()=> setActiveLink("cards")}>Game Cards</Link></li>
+            <li>        <Link to="/calc" className={activeLink == "/calc" ? 'active-page' : ""} id='calc' onClick={()=> setActiveLink("calc")}>Calc</Link></li>
+            <li><Link to="/XOgame" className={activeLink == "/XOgame" ? 'active-page' : ""} id='XOgame' onClick={()=> setActiveLink("XOgame")}>X-O</Link></li>
+            <li><Link to="/test" className={activeLink == "/test" ? 'active-page' : ""} id='test' onClick={()=> setActiveLink("test")}>JS Test</Link></li>
+            <li>        <Link to="/reg" className={activeLink == "/reg" ? 'active-page' : ""} id='reg' onClick={()=> setActiveLink("reg")}>Registation</Link></li>
+          </ul>
+        </details>
       <main>
         <Profile/>
         <Outlet/>
