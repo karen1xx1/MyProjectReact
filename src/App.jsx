@@ -14,7 +14,7 @@ const App = ()=>{
     <>
     <Routes>
       <Route path="/" element={<RootLayout/>}>
-         <Route path="/store" element={<StorePage/>}/>
+         <Route path="/" element={<StorePage/>}/>
          <Route path="/cards" element={<GameCards/>}/>
          <Route path="/calc" element={<Calc/>}/>
          <Route path="/XOgame" element={<XOGame/>}/>

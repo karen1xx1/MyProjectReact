@@ -1,7 +1,7 @@
 .X-O-game{
     display: flex;
     flex-wrap: wrap;
-    width: clamp(500px, 60%, 300px);
+    width: clamp(400px, 60%, 300px);
     margin: 100px auto;
     div{
         width: 33%;
@@ -39,4 +39,10 @@ width: 200px;
 
 .selected-slot{
     pointer-events: none;
+}
+
+@media screen and (max-width: 600px) {
+    .X-O-game{
+        width: 350px;
+    }
 }
